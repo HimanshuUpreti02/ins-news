@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu&display=swap");
+
+
+body {
+	background: #373b3d;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+
+header {
+  display: flex;
+  background-color: black;
+  height: 60px;
+  margin-bottom: 10px;
+  color: rgb(206, 159, 159);
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+a {
+  text-decoration: none;
+  /* font-style: italic; */
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-style: italic;
+}
+
+img {
+  height: 100px;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.image-div {
+    background-color: rgb(88, 54, 88);
+    border-radius: 5px;
+  width: 230px;
+  margin: 10px auto 10px auto;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid;
+}
+
+.image-div h4 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 0) and (max-width: 500px) {
+  .news-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .image-div {
+    width: fit-content;
+    margin: 10px 50px 10px 50px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 680px) {
+  .news-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .image-div {
+    width: 240px;
+    margin: 10px auto 10px auto;
+  }
+}
+
+
+@media only screen and (min-width: 680px) and (max-width: 740px) {
+
+  .image-div {
+    width: 200;
+    margin: 10px auto 10px auto;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 950px) {
+  .news-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
